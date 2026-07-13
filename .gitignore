@@ -1,0 +1,28 @@
+# Python/editor caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.ipynb_checkpoints/
+
+# Runtime outputs
+DAAL/logs_less_frac/
+DAAL/weight/
+**/new_train_data.xlsx
+**/new_pool_data.xlsx
+*.log
+DAAL/input_output_vectors.csv
+outputs/
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.msgpack
+
+# Dataset text, prepared tensors, prompt seeds, and third-party lexicons are not
+# redistributed in the public code release. See data/README.md.
+data/*
+!data/README.md
