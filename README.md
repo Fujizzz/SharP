@@ -12,9 +12,10 @@ Chongqing University · Chongqing University Central Hospital · University of R
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Transformers](https://img.shields.io/badge/🤗%20Transformers-4.x-FFD21E)](https://huggingface.co/docs/transformers/)
 [![Code Check](https://github.com/Fujizzz/SharP/actions/workflows/code-check.yml/badge.svg)](https://github.com/Fujizzz/SharP/actions/workflows/code-check.yml)
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.eswa.2026.131178-007ec6)](https://doi.org/10.1016/j.eswa.2026.131178)
 [![Release](https://img.shields.io/badge/release-research%20artifact-2ea44f)](docs/RUN_REVIEW.md)
 
-*Research code release for the SharP preprint.*
+*Official research code for the SharP article published in Expert Systems with Applications.*
 
 </div>
 
@@ -23,6 +24,18 @@ Chongqing University · Chongqing University Central Hospital · University of R
 **SharP** is a boundary-aware augmentation framework for fake-news detection when labeled data are scarce. It combines a learnable **soft prompt** with a structured **hard prompt**, queries an LLM around uncertain classifier boundaries, and iteratively adds useful synthetic samples to the labeled set.
 
 The retained workspace covers **PHEME**, **LIAR**, and **Twitter15/16**. Because the original code was adapted in place for each dataset, this repository preserves the identifiable dataset-specific versions and documents their reproduction boundaries explicitly.
+
+## Publication
+
+**Ziyu Luo, Wei Li, Haoping Huang, Kecheng Liu, and Min Gao.** “SharP: Soft and Hard Prompt-Guided Augmentation with LLM for Low Resource Fake News Detection.” *Expert Systems with Applications*, Volume 309, Article 131178, 2026. [https://doi.org/10.1016/j.eswa.2026.131178](https://doi.org/10.1016/j.eswa.2026.131178)
+
+- **Available online:** 10 January 2026
+- **Volume publication date:** 5 May 2026
+- **Volume:** 309
+- **Article number:** 131178
+- **PII:** S0957417426000928
+
+The repository copy at [`paper/SharP.pdf`](paper/SharP.pdf) is the author manuscript retained with the research artifact. Please use the DOI above to access and cite the publisher's Version of Record.
 
 ## Highlights
 
@@ -100,7 +113,7 @@ SharP/
 ├── assets/figures/               # Paper architecture figures
 ├── scripts/smoke_check.py        # Offline structure/data audit
 ├── docs/                         # Reproduction and version notes
-└── paper/SharP.pdf
+└── paper/SharP.pdf               # Author manuscript
 ```
 
 Dataset text, prepared tensors, prompt seeds, and third-party lexicons are not redistributed. Follow [`data/README.md`](data/README.md) to obtain upstream resources and reconstruct the expected local layout. This keeps the public repository focused on original research code while respecting independent dataset and lexicon terms.
@@ -277,8 +290,12 @@ If this repository is useful in your research, please cite:
 @article{luo2026sharp,
   title   = {SharP: Soft and Hard Prompt-Guided Augmentation with LLM for Low Resource Fake News Detection},
   author  = {Luo, Ziyu and Li, Wei and Huang, Haoping and Liu, Kecheng and Gao, Min},
+  journal = {Expert Systems with Applications},
+  volume  = {309},
+  pages   = {131178},
   year    = {2026},
-  note    = {Preprint}
+  doi     = {10.1016/j.eswa.2026.131178},
+  url     = {https://doi.org/10.1016/j.eswa.2026.131178}
 }
 ```
 

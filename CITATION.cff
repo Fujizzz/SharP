@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite the SharP paper."
+message: "If you use this software, please cite the published SharP article."
 title: "SharP: Soft and Hard Prompt-Guided Augmentation with LLM for Low Resource Fake News Detection"
 type: software
 authors:
@@ -13,5 +13,28 @@ authors:
     given-names: Kecheng
   - family-names: Gao
     given-names: Min
-version: 0.1.0-review
-date-released: 2026-07-13
+version: 1.0.0
+date-released: 2026-07-14
+repository-code: "https://github.com/Fujizzz/SharP"
+url: "https://github.com/Fujizzz/SharP"
+preferred-citation:
+  type: article
+  title: "SharP: Soft and Hard Prompt-Guided Augmentation with LLM for Low Resource Fake News Detection"
+  authors:
+    - family-names: Luo
+      given-names: Ziyu
+    - family-names: Li
+      given-names: Wei
+    - family-names: Huang
+      given-names: Haoping
+    - family-names: Liu
+      given-names: Kecheng
+    - family-names: Gao
+      given-names: Min
+  journal: "Expert Systems with Applications"
+  volume: 309
+  start: 131178
+  year: 2026
+  date-published: 2026-05-05
+  doi: "10.1016/j.eswa.2026.131178"
+  url: "https://doi.org/10.1016/j.eswa.2026.131178"
